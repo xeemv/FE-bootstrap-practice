@@ -7,12 +7,78 @@
     <title>Practice-Bootstrap</title>
     <!-- linking that we are adding -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        div{
+            border-style: solid;
+            border-color: black;
+            /* padding: 5px; */
+            /* margin: 5px; */
+        }
+    </style>
 </head>
 <body>
-    <h1>hello world</h1>
-    <div class="alert alert-primary" role="alert">
+    <h1>Boba Shop</h1>
+    <!-- <div class="alert alert-primary" role="alert">
         It works!
+    </div> -->
+
+    <!-- first div is for container class -->
+    <!-- this will be stationed in the middle of the page due to the margin in the style sheet-->
+    <div class="container">
+        <div class="row">
+            <!-- row = house the columns which could be different sizes -->
+            <div class="col-lg-6">
+                <!-- if using col-sm:
+                - the columns are small regardless of the device
+                - columns will remain sidebyside as long as the viewpoints are >= to 576px 
+                - if device is too small, it will stack ontop of each other -->
+                
+                <!-- if using col-lg:
+                - will stack ontop of each other earlier than the small column verison will
+                -->
+              content  
+            </div>
+            <div class="col-lg-4">
+                <!-- 
+                - could add sizes to the columns and set how much space one column takes up 
+                - there are a total of 12 columns
+                - all sizes have to total to 12(max = 100% of the space in that row)
+                -->
+                content  
+            </div>
+            <div class="col-lg-2">
+                content  
+            </div>
+        </div>
     </div>
+
+    <!-- second div is for container fluid -->
+    <!-- this will span the entire width of the page -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+              content  
+            </div>
+            <div class="col-sm">
+                content  
+            </div>
+            <div class="col-sm">
+                <div class="row">
+                    <div class="col-md-8">
+                        Here's my 8
+                    </div>
+                    <div class="col-md-4">
+                        Here's my 4
+                    </div>
+                </div>
+              content
+            </div>
+        </div>
+    </div>
+
+
+
+
 
     <script src="./node_modules/jquery/dist/jquery.js"></script>
     <!-- 
